@@ -203,8 +203,8 @@ def draw_game(screen, pygame, env: SnakeEnv, cell_size: int, font, small_font) -
     header_height = 72
     screen.fill((246, 247, 241))
 
-    title = font.render(f"Snake  Score: {env.score}", True, (18, 48, 59))
-    help_text = small_font.render("Arrow/WASD move   R restart   ESC quit", True, (72, 92, 101))
+    title = font.render(f"Snake Score: {env.score}", True, (18, 48, 59))
+    help_text = small_font.render("Shao/WASD move   R restart   ESC quit", True, (72, 92, 101))
     screen.blit(title, (20, 14))
     screen.blit(help_text, (20, 44))
 

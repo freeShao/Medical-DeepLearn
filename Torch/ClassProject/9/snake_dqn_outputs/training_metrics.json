@@ -1,0 +1,51 @@
+{
+  "config": {
+    "board_size": 6,
+    "episodes": 500,
+    "gamma": 0.9,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "replay_capacity": 20000,
+    "warmup_steps": 200,
+    "target_update_interval": 200,
+    "epsilon_start": 1.0,
+    "epsilon_min": 0.05,
+    "epsilon_decay": 0.995,
+    "eval_episodes": 50,
+    "seed": 7
+  },
+  "model_path": "snake_dqn_outputs/dqn_model.pt",
+  "state_features": [
+    "danger_straight",
+    "danger_left",
+    "danger_right",
+    "dir_up",
+    "dir_right",
+    "dir_down",
+    "dir_left",
+    "food_up",
+    "food_right",
+    "food_down",
+    "food_left"
+  ],
+  "actions": [
+    "straight",
+    "left",
+    "right"
+  ],
+  "first_50_mean_score": 0.36,
+  "last_50_mean_score": 7.48,
+  "best_training_score": 16,
+  "evaluation": {
+    "episodes": 50.0,
+    "mean_score": 12.72,
+    "max_score": 21.0,
+    "mean_reward": 112.25200000000012
+  },
+  "outputs": {
+    "model": "snake_dqn_outputs/dqn_model.pt",
+    "metrics": "snake_dqn_outputs/training_metrics.json",
+    "scores": "snake_dqn_outputs/training_scores.csv",
+    "curve": "snake_dqn_outputs/dqn_training_curve.png"
+  }
+}
